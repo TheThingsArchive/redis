@@ -1,3 +1,3 @@
-FROM redis:3.2.12-alpine3.8
+FROM redis:6.0.6-alpine3.12
 COPY redis.conf /usr/local/etc/redis/redis.conf
 CMD [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
